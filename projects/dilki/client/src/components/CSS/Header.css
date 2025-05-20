@@ -1,0 +1,110 @@
+/* Header container */
+.header-container {
+    background: rgba(0, 0, 0, 0.6);
+    background-image: url("/bg_img.png");
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    position: relative;
+    height: 100vh;
+    animation: fadeIn 1s ease-out;
+    z-index: 1;  /* Ensure the header is on top */
+  }
+  
+  /* Hand wave icon animation */
+  .animate__fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Text Gradient effect */
+  .text-gradient {
+    background: -webkit-linear-gradient(45deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Button styling */
+  .cta-button {
+    background: linear-gradient(90deg, #4e73df, #1e3a8a);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(90deg, #3b5a97, #142c5c);
+    transform: scale(1.05);
+  }
+  
+  /* Profile image hover effect */
+  .profile-img {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Header text and content spacing */
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;  /* Change text color to black */
+  }
+  
+  @media (min-width: 640px) {
+    .header-container {
+      padding: 6rem 0;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* NavBar CSS (isolating navbar styles) */
+  .navbar {
+    background: #333;  /* Set background color for the navbar */
+    padding: 1rem;
+    position: absolute;  /* Position navbar separately */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;  /* Ensure navbar is above other content */
+  }
+  
+  .navbar a {
+    color: #fff;  /* Set color for navbar links */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+  }
+  

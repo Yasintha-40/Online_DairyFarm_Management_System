@@ -1,0 +1,22 @@
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content {
+    flex: 1;
+    padding-bottom: 20px; /* Add some space before footer */
+}
+
+/* Ensure content doesn't overlap with footer */
+.home-content > * {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-content {
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,28 @@
+.list{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap:10px;
+}
+.search-bar {
+    width: 80%;  /* Adjust the width to make it wider */
+    margin: 0 auto;  /* Center the element horizontally */
+    display: flex;  /* To ensure centering works properly */
+    justify-content: center;
+}
+.search-bar input {
+    width: 90%;  /* Ensure the input field takes up the full width of the container */
+    padding: 8px;
+    font-size: 14px;
+}
+
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .button {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+  }

@@ -1,0 +1,127 @@
+/* Overall Footer Styling */
+footer {
+    width: 100%;
+  }
+  
+  /* First Section - Green Background */
+  .footer-content-wrapper {
+    background-color: #6DBE45;  /* Green background */
+    padding: 80px 0;
+  }
+  
+  .footer-content {
+    max-width: 600px;  /* Boxed content width */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;  /* Stack everything in a column */
+    align-items: center;  /* Center everything horizontally */
+    text-align: center;
+  }
+  
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo-img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    color: white;
+  }
+  
+  .footer-socials {
+    margin-bottom:40px;
+  }
+  
+  .footer-socials h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: auto;
+    transition: opacity 0.3s;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.7;
+  }
+  
+  .footer-contact {
+    margin-bottom: 20px;
+  }
+  
+  .footer-contact h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* Contact info in one line */
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;  /* Ensure it wraps on smaller screens */
+  }
+  
+  .contact-info p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .contact-icon {
+    width: 18px;
+    height: auto;
+    margin-right: 8px;
+  }
+  
+  /* Second Section - Black Background */
+  .footer-copyright {
+    background-color: #34495e; /* Dark background */
+    color: #bdc3c7;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .footer-content {
+      padding: 0 20px;
+    }
+  
+    .footer-logo-img {
+      width: 80px;
+    }
+  
+    .contact-info {
+      flex-direction: column;  /* Stack contact info on smaller screens */
+      gap: 10px;
+    }
+  
+    .contact-info p {
+      font-size: 12px;
+    }
+  }
+  

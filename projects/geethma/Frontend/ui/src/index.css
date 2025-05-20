@@ -1,0 +1,4 @@
+/* Add margin to the whole page */
+body {
+  margin: 30px; /* Adds 30px margin on all sides of the page */
+}

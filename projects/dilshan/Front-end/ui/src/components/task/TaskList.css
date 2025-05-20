@@ -1,0 +1,14 @@
+.department-filter {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Search-bar {
+  display: flex;
+  align-items: center;
+}

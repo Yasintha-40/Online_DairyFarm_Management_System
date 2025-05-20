@@ -1,0 +1,178 @@
+.add{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color: #6d6d6d ;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+.add:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+.add form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-img-upload {
+    margin-bottom: 20px;
+}
+.add-img-upload p {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+.add-img-upload img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px dashed #ddd;
+    padding: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.add-img-upload img:hover {
+    border-color: #4CAF50;
+    transform: scale(1.05);
+}
+.add-product-name, .add-product-description, .add-product-id{
+    width: max(40%,280px);
+    margin-bottom: 15px;
+}
+.add-product-name p, .add-product-description p, .add-product-id p, 
+.add-category p, .add-price p, .add-manufacture-date p, .add-expire-date p {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+.add-product-name input, .add-product-description input, .add-product-id input,
+.add-category select, .add-price input, .add-manufacture-date input, .add-expire-date input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+.add-product-name input:focus, .add-product-description input:focus, .add-product-id input:focus,
+.add-category select:focus, .add-price input:focus, .add-manufacture-date input:focus, .add-expire-date input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    outline: none;
+    background-color: #fff;
+}
+.add-product-description textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    resize: vertical;
+    min-height: 120px;
+}
+.add-product-description textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    outline: none;
+    background-color: #fff;
+}
+.add-category-price, .add-dates{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+.add-category-price select, .add-category-price input, .add-dates input{
+    max-width: 120px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+.add-category-price select:focus, .add-category-price input:focus, .add-dates input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    outline: none;
+    background-color: #fff;
+}
+.add-btn{
+    max-width: 150px;
+    border: none;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.add-btn:hover {
+    background: linear-gradient(135deg, #45a049, #3d8b40);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.add-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.add-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+/* Date input styling */
+input[type="date"] {
+    position: relative;
+    cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .add {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+    
+    .add-product-name, .add-product-description, .add-product-id {
+        width: 100%;
+    }
+    
+    .add-category-price, .add-dates {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .add-category-price select, .add-category-price input, .add-dates input {
+        max-width: 100%;
+    }
+}

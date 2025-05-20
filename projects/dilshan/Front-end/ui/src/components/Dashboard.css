@@ -1,0 +1,106 @@
+/* General Layout */
+.dashboard-container {
+    padding: 80px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  /* Blue Header Box */
+  .header-box {
+    background: #3b82f6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Push text left and image right */
+    align-items: center; /* Align vertically */
+    width: 80%;
+  }
+  
+  /* Header Text */
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Header Image Styling (Larger Size) */
+  .header-image {
+    width: 250px; /* Increase image size */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Service Grid Layout (4 columns per row, adjusted gaps) */
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(220px, 1fr)); /* Stretches evenly */
+    gap: 16px; /* Equal row & column gap */
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  /* Service Box */
+  .service-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-img-container {
+    background-color: #6DBE45;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  
+  .service-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  
+  .service-box h3 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 1024px) {
+    .service-grid {
+      grid-template-columns: repeat(2, minmax(220px, 1fr)); /* 2 per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-grid {
+      grid-template-columns: repeat(1, minmax(220px, 1fr)); /* 1 per row */
+    }
+  
+    .header-box {
+      flex-direction: column; /* Stack elements in mobile */
+      text-align: center;
+    }
+  
+    .header-image {
+      margin-top: 10px;
+      width: 120px; /* Adjust size for smaller screens */
+      max-height: 100px;
+    }
+  }

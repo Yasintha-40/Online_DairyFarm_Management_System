@@ -1,0 +1,136 @@
+.Show_Alert {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .searchpdf {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .Search-bar {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+  }
+  
+  .Search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .department-filter {
+    padding: 10px;
+    font-size: 16px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button button:hover {
+    background-color: #45a049;
+  }
+
+  .task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+
+  .task-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .task-number {
+    font-weight: bold;
+    color: #666;
+  }
+
+  .task-date {
+    color: #888;
+    font-size: 0.9em;
+  }
+
+  .task-department {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+
+  .task-title {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.2em;
+  }
+
+  .task-description {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .task-footer {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .employee-id {
+    color: #888;
+    font-size: 0.9em;
+  }
+
+  .no-tasks {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
