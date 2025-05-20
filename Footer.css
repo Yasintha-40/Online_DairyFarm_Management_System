@@ -1,0 +1,153 @@
+/* Overall Footer Styling */
+footer {
+    width: 100%;
+}
+
+/* First Section - Green Background */
+.footer-content-wrapper {
+    background-color: #6DBE45;
+    padding: 40px 0; /* Smaller vertical padding */
+}
+
+.footer-content {
+    max-width: 800px; /* Reduced content width */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px; /* Smaller side padding */
+}
+
+.footer-logo {
+    margin-bottom: 12px;
+}
+
+.footer-logo-img {
+    width: 70px; /* Slightly smaller logo */
+    height: auto;
+    margin-bottom: 6px;
+}
+
+.footer-description {
+    font-size: 11px; /* Slightly smaller font */
+    color: white;
+}
+
+.footer-socials {
+    margin-bottom: 20px;
+}
+
+.footer-socials h4 {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Reduced gap between icons */
+}
+
+.social-icon {
+    width: 16px; /* Smaller icons */
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.footer-contact {
+    margin-bottom: 12px;
+}
+
+.footer-contact h4 {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Smaller gap */
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contact-icon {
+    width: 14px; /* Smaller icons */
+    height: auto;
+    margin-right: 5px;
+}
+
+/* Second Section - Black Background */
+.footer-copyright {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 6px; /* Smaller padding */
+    font-size: 9px; /* Smaller font */
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .footer-logo-img {
+        width: 60px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .contact-info p {
+        font-size: 10px;
+    }
+
+    .footer-content-wrapper {
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content-wrapper {
+        padding: 20px 8px;
+    }
+
+    .footer-description {
+        font-size: 10px;
+    }
+
+    .social-icons {
+        gap: 6px;
+    }
+
+    .footer-logo-img {
+        width: 50px;
+    }
+
+    .footer-socials h4,
+    .footer-contact h4 {
+        font-size: 13px;
+    }
+}

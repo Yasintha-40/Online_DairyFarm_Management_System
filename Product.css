@@ -1,0 +1,132 @@
+/* Product.css - Styling for the Product component */
+.product-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.product-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+ 
+/* Style for the main "Product Display" heading */
+.product-container h1:first-of-type {
+  text-align: center; /* Keep only the first heading centered */
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+}
+ 
+/* Style for all other headings (product details) */
+.product-container h1:not(:first-of-type) {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin: 6px 0;
+  padding: 6px 10px;
+  background-color: #f9fafb;
+  border-radius: 4px;
+  border-bottom: none;
+  text-decoration: none;
+  position: relative;
+  text-align: left; /* Explicitly set left alignment */
+}
+ 
+/* Remove any possible pseudo-elements that might create underlines */
+.product-container h1:after,
+.product-container h1:before {
+  display: none;
+}
+ 
+/* Highlight the ID with a different style */
+.product-container h1:nth-of-type(2) {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #718096;
+  background-color: #edf2f7;
+  text-align: left;
+}
+ 
+/* Style for links */
+.product-container a {
+  text-decoration: none;
+}
+ 
+/* Reset button styles first */
+.product-container button {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s, transform 0.2s;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+
+.product-container button:hover {
+  transform: translateY(-2px);
+}
+ 
+/* GREEN UPDATE BUTTON - specifically target the button inside a Link component */
+.product-container a button {
+  background-color: #2ea44f !important;
+}
+ 
+.product-container a button:hover {
+  background-color: #22833d !important;
+}
+
+/* RED DELETE BUTTON - the standalone button */
+.product-container > button {
+  background-color: #e53e3e !important;
+}
+ 
+.product-container > button:hover {
+  background-color: #c53030 !important;
+}
+
+/* For long URLs, prevent overflow */
+.product-container h1:nth-last-of-type(2) {
+  word-break: break-all;
+  font-size: 0.8rem;
+}
+ 
+/* Container for buttons - align left */
+.product-container > a,
+.product-container > button {
+  text-align: left;
+  display: inline-block;
+}
+ 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .product-container {
+    padding: 12px;
+  }
+     
+  .product-container h1:first-of-type {
+    font-size: 1.2rem;
+  }
+     
+  .product-container h1:not(:first-of-type) {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
+     
+  .product-container button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}

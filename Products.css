@@ -1,0 +1,223 @@
+/* Products.css - Styling for the Products component */
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f9fafb;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+/* Content section */
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+/* Main Heading - keeping the underline for this one only */
+.content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.2rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.content h1:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #4a90e2, #63b3ed);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Reduce font size in details sections */
+.details, 
+.content .details p, 
+.content .details span {
+    font-size: 0.85rem; /* Reduced font size */
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-container input {
+    width: 50%;
+    padding: 10px 15px;
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+}
+
+/* Reduce spacing in navbar between buttons */
+.navbar {
+    display: flex;
+    gap: 8px;
+}
+
+.navbar button, 
+.navbar a {
+    padding: 8px 12px;
+    font-size: 0.85rem; /* Smaller font size */
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px; /* Reduced font size */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #3a7bc8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* No results section */
+.no-results {
+    text-align: center;
+    padding: 30px;
+    font-size: 16px; /* Reduced font size */
+    color: #718096;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Product list */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 0.85rem; /* Reduced font size for product list */
+}
+
+/* Make details inside forms smaller */
+form .details,
+form label,
+form .form-group p,
+form .form-text {
+    font-size: 0.85rem; /* Smaller font size for form details */
+}
+
+form input,
+form select,
+form textarea {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+
+/* Report buttons */
+.download-btn, .send-report-btn {
+    display: block;
+    width: 250px;
+    padding: 12px;
+    margin: 15px auto;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px; /* Reduced font size for buttons */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.send-report-btn {
+    background-color: #25D366; /* WhatsApp green color */
+}
+
+.download-btn:hover, .send-report-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:hover {
+    background-color: #3a7bc8;
+}
+
+.send-report-btn:hover {
+    background-color: #128C7E; /* WhatsApp dark green color */
+}
+
+.download-btn:active, .send-report-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .products-container {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 1.8rem; /* Reduced font size for heading on mobile */
+    }
+
+    .search-container input {
+        width: 70%;
+        font-size: 12px; /* Smaller font size for search input on mobile */
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+        font-size: 0.8rem; /* Further reduced font size for product list on mobile */
+    }
+
+    .download-btn, .send-report-btn {
+        width: 200px;
+        font-size: 10px; /* Even smaller font size for buttons on mobile */
+    }
+
+    /* Further reduce sizes on mobile */
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar button, 
+    .navbar a {
+        padding: 6px 10px;
+        font-size: 0.85rem; /* Smaller font size for navbar buttons on mobile */
+    }
+
+    form .details,
+    form label,
+    form .form-group p,
+    form .form-text {
+        font-size: 0.8rem; /* Smaller font size for form elements on mobile */
+    }
+}

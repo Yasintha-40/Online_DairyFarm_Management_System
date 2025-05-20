@@ -1,0 +1,123 @@
+/* AddProduct.css - Styled form for product addition with uniform fields */
+
+.Addproduct-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Addproduct-container h1 {
+    text-align: center;
+    color: #2a3f5f;
+    margin-bottom: 30px;
+    font-size: 28px;
+    position: relative;
+}
+
+.Addproduct-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #5480c4, #4fc3f7);
+    border-radius: 2px;
+}
+
+/* Form styling - single column layout with consistent sizing */
+.Addproduct-container form {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.Addproduct-container label {
+    text-align:left;
+    display: block;
+    font-weight: 700;
+    margin-bottom:4px;
+    color: #0f1a2b;
+    font-size: 17px;
+}
+
+
+.Addproduct-container input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+}
+
+.Addproduct-container input:focus {
+    border-color: #4fc3f7;
+    box-shadow: 0 0 0 2px rgba(17, 123, 210, 0.666);
+    outline: none;
+}
+
+/* Button styling - medium width and centered */
+.Addproduct-container button {
+    width: auto;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: linear-gradient(135deg, #a2c4f1 0%, #7bb8e0 100%); /* Light blue gradient */
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(9, 9, 9, 0.1);
+}
+
+.Addproduct-container button:hover {
+    background: linear-gradient(135deg, #1d92e0 0%, #1c8bd5  100%); /* Lighter blue gradient on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(24, 81, 103, 0.322);
+}
+
+.Addproduct-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(76, 177, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Addproduct-container {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+/* Keep original HTML structure with <br> tags */
+.Addproduct-container form br {
+    display: block;
+}
+
+/* Add style for validation */
+.Addproduct-container input:invalid {
+    border-color: #ff6b6b;
+}
+
+.Addproduct-container input:valid {
+    border-color: #69db7c;
+}
+
+/* Spacing between form elements to accommodate <br><br> in HTML */
+.Addproduct-container label {
+    margin-top: 1px;
+}

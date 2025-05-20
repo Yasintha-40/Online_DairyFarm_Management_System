@@ -1,0 +1,30 @@
+
+.home-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  background-color: #333;
+  padding: 10px;
+}
+
+.home-li {
+  font-size: 18px;
+}
+
+.home-a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.home-a h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.home-a:hover {
+  color: #ffcc00;
+}

@@ -1,0 +1,139 @@
+/* Nav.css - Clean styling with Home left, Add Product middle, and Products Details right */
+
+/* Base styling for navbar */
+.navbar {
+  background: linear-gradient(135deg, #2a3f5f 0%, #1e2e45 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #4fc3f7;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation items styling - using flexbox for positioning */
+.home-ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Individual navigation items */
+.home-ll {
+  position: relative;
+}
+
+/* First item (Home) aligned to left */
+.home-ll:nth-child(1) {
+  margin-right: auto;
+}
+
+/* Second item (Add Product) centered */
+.home-ll:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Third item (Products Details) aligned to right */
+.home-ll:nth-child(3) {
+  margin-left: auto;
+}
+
+/* Link styling */
+.home-a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 10px 15px;
+  display: block;
+}
+
+.home-a h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  padding: 5px 0;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Beautiful underline effect on hover */
+.home-a h1::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  background-color: #4fc3f7;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.home-a:hover h1 {
+  color: #4fc3f7;
+}
+
+.home-a:hover h1::after {
+  width: 100%;
+}
+
+/* Active link styling */
+.active h1 {
+  color: #4fc3f7;
+}
+
+.active h1::after {
+  width: 70%;
+  background-color: #4fc3f7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-a h1 {
+    font-size: 16px;
+  }
+  
+  .home-ll:nth-child(2) {
+    position: static;
+    transform: none;
+  }
+  
+  .home-ul {
+    justify-content: space-around;
+  }
+  
+  .home-ll:nth-child(1),
+  .home-ll:nth-child(3) {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
+  
+  .home-a {
+    padding: 5px;
+  }
+  
+  .home-a h1 {
+    font-size: 14px;
+  }
+}
